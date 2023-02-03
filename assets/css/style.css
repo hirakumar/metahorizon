@@ -29,9 +29,13 @@ body{
     text-decoration: none;
     padding:10px 15px;
 }
+.mainnav ul li.active a{
+    color:var(---primary-dark-color);
+} 
 .slider {
     background :rgba(0,0,0,0.17);
     position: relative;
+    height:500px;
 }
 .slider img{
     width:100%;
@@ -52,7 +56,8 @@ body{
 }
 .slider .sliderImg{
     width: 100%;
-    height: 450px;
+    filter: grayscale(1);
+    height: 500px;
     top:0px;
     object-fit: cover;
     left:0px;
@@ -115,12 +120,173 @@ body{
     height: 100px;
 }
 .tel {
-    background:var(---primary-dark-color);
-    color:white;
-    font-size:14px;
-    padding:11px 15px;
-    display:flex;
+    background: var(---primary-dark-color);
+    color: white;
+    font-size: 14px;
+    padding: 11px 15px;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
 }
 .tel span{
     padding-left:10px;
+}
+.whowe {
+    position:relative;
+}
+.whowe .img{
+
+}
+.whowe .img:before{
+    content:'';
+    position: absolute; 
+    background: url("../img/dot.png") no-repeat;  
+    display: block;
+    width:306px;
+    height:426px;
+    top:0px;
+    left:150px;
+
+}
+.whowe .img img{
+    position: relative;
+    z-index: 5;
+    top:150px;
+    margin-bottom:150px;
+}
+.whowe h2{
+    font-family: 'DM Serif Display', serif;
+    font-size:50px;
+    padding:40px 0;
+    color:var(---primary-dark-color);
+}
+.whowe .whocont{
+    padding :100px 0 150px 0;
+}
+.whowe .whocont{
+    letter-spacing: 1px;
+   
+}
+.whowe .whoimg{
+    padding-bottom: 150px;
+}
+.more{
+    display: inline-block;
+    background: url(../img/blue-arrow.png) 0 100% no-repeat;
+    width: 188px;
+    padding: 0 0 9px 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #333;
+    margin-top: 40px;
+}
+.wedo {
+    background:var(---primary-dark-color);
+    display: flex;
+    text-align: center;
+    padding:100px 0;
+    
+}
+.wedo h2{ margin:0px; padding:30px 0; font-size:50px; color:#ffffff; text-align: center; font-family: 'DM Serif Display', serif;}
+.wedo .desc{font-size:14px; padding:20px 0; color:white; text-align: center; display: inline-block; width:600px;}
+.wedo .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wedo .services .item{
+    display:block;
+    width:322px;
+    height:322px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin:15px;
+
+}
+.wedo .services .item .img{
+display: block;
+}
+.wedo .services .item .itemContent{
+    display:block;
+    width:322px;
+    height:322px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background:rgba(48,88,155,0.5);
+    color:#ffffff;
+}
+.wedo .services .item:hover .itemContent{
+    background:var(---primary-color);
+    color:#ffffff;
+
+}
+.wedo .services .item:hover .more{
+    color:#ffffff;
+}
+
+.wedo .services .item h3{
+    margin:20px 15px 15px 20px;
+    font-size:18px;
+    font-weight:700;
+    padding-top:88px;
+    width:80%;
+    text-align: left;
+    height:125px;
+}
+.wedo .services .item p{
+    font-size:16px;
+    min-height:90px;
+}
+.wedo .services .item .more{
+    margin:0 0 0 20px;
+    color:#ffffff;
+}
+/* .wedo .services .identity:hover h3{
+    background: url("../img/id-logo-blue.png") no-repeat;
+    
+} */
+.wedo .services .identity h3{
+    background: url("../img/id-logo.png") no-repeat;
+    
+}
+/* .wedo .services .devops:hover h3{
+    background: url("../img/system-logo-blue.png") no-repeat;
+    
+} */
+.wedo .services .devops h3{
+    background: url("../img/system-logo.png") no-repeat;
+    
+}
+/* .wedo .services .expert:hover h3{
+    background: url("../img/expert-logo-blue.png") no-repeat;
+    
+} */
+.wedo .services .expert h3{
+    background: url("../img/expert-logo.png") no-repeat;
+    
+}
+/* .wedo .services .custom:hover h3{
+    background: url("../img/custom-logo-blue.png") no-repeat;
+    
+} */
+.wedo .services .custom h3{
+    background: url("../img/custom-logo.png") no-repeat;
+    
+}
+/* .wedo .services .intel:hover h3{
+    background: url("../img/intel-logo-blue.png") no-repeat;
+    
+} */
+.wedo .services .intel h3{
+    background: url("../img/intel-logo.png") no-repeat;
+    
+}
+.wedo .services .item p{
+    padding:0 20px 0 20px;
 }
