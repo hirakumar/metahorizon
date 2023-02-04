@@ -5,7 +5,9 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-
+.primary-color {
+    color:var(---primary-color) !important;
+}
 .logo{
     display: flex;
     justify-content: center;
@@ -174,11 +176,13 @@ color:white;
     display:block;
 }
 .topBar{
-    position: relative;
+    position: sticky;
     top: 0px;
     width: 100%;
     z-index: 15;
     padding:15px 0;
+    background: #fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .tel {
     background: var(---primary-dark-color);
@@ -272,7 +276,7 @@ color:white;
 }
 h2.h2{ text-transform: capitalize; color:var(---primary-dark-color); font-weight:400; margin:0px; padding:30px 0; font-size:50px;  text-align: center; font-family: 'DM Serif Display', serif;}
 
-.wedo h2{ font-weight:400; margin:0px; padding:30px 0; font-size:50px; color:#ffffff; text-align: center; font-family: 'DM Serif Display', serif;}
+.wedo h2,h2.sectionHeader{ font-weight:400; margin:0px; padding:30px 0; font-size:50px; color:#ffffff; text-align: center; font-family: 'DM Serif Display', serif;}
 
 .wedo .desc{font-size:14px; padding:20px 0; color:white; text-align: center; display: inline-block; width:600px;}
 .wedo .services {
@@ -577,6 +581,21 @@ padding-bottom:40px;
     text-align: center;
     padding:50px 0;
 }
+.pageContent .highlightHeader{
+    font-size:35px;
+    color:#2f589b;
+    line-height:40px;
+    text-align: center;
+    padding:50px 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.pageContent .bold{
+    font-size:20px;
+    line-height: 25px;
+    color:#333333;
+    text-align: center;
+}
 .pageContent h2{color:#2f589b; font-size:16px; padding:15px 0; text-transform: uppercase; font-weight: 600;}
 .pageContent h3{color:#333333; font-size:16px; padding:15px 0; text-transform: capitalize; font-weight: 600;}
 
@@ -587,7 +606,8 @@ padding-bottom:40px;
     padding:50px 0;
 }
 .pageContent p{
-    padding:15px 0;
+    padding:0px 0 30px 0;
+    margin:0px;
     line-height: 28px;
 }
 .smallLinks a{text-decoration: none;}
@@ -650,4 +670,273 @@ padding-bottom:40px;
     color:#ffffff;
     padding:6px 10px;
     min-width: 150px;
+}
+.wellmaintain {
+    padding: 25px 0 50px 0;
+}
+.benefit{
+    background: #00030c url("../img/benefitbg.jpg") no-repeat;
+    min-height:870px;
+}
+.benefit h2{
+    padding:80px 0;
+    color: var(---primary-color);
+}
+.benefit ul {
+    list-style: none;
+    margin:75px 0 0 0;
+    padding:0px;
+}
+.benefit ul li{
+    font-size:20px;
+    color:#ffffff;
+    list-style: none;
+    padding:0 0 0 100px;
+    height:70px;
+    line-height: 70px;
+    position: relative;
+    margin:10px 0;
+  
+}
+.benefit ul li:before{
+    content:'';
+    display:block;
+    border:solid 2px var(---primary-color);
+    border-radius:60px;
+    height:60px;
+    width:60px;
+    position :absolute;
+    left:0px;
+    top:5px;
+    background-position:50%;
+    background-repeat: no-repeat;
+    
+}
+.benefit ul li.budget:before{
+background-image: url("../img/budget.png");
+}
+.benefit ul li.resource:before{
+    background-image: url("../img/resource.png");
+
+}
+.benefit ul li.hiring:before{
+    background-image: url("../img/hiring.png");
+}
+.benefit ul li.support:before{
+    background-image: url("../img/support.png");
+}
+.identityTabs{
+    position: relative;
+}
+.identityTabs .nav-tabs{
+    position: absolute;
+z-index: 9;
+top: -42px;
+}
+.identityTabs ul.nav-tabs{
+border-color:transparent;
+
+}
+.identityTabs button.nav-link{
+    border-radius:0px;
+    width:100%;
+    font-size:18px;
+    color:var(---primary-color);
+    border-color:transparent
+}
+.identityTabs .nav-item{
+    border-color:transparent
+}
+.identityTabs .nav-tabs .nav-link:focus,.identityTabs .nav-tabs .nav-link:hover{
+    border-color:transparent
+}
+.identityTabs  .tabdesc{
+    padding:40px 0 20px 0;
+    margin:0px;
+}
+.identityTabs  .tab-pane{
+    padding-bottom:40px
+}
+.identityTabs  .tab-pane ul.num {
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    
+}
+.identityTabs  .tab-pane ul.num li {
+    border-left:solid 2px var(---primary-color);
+    padding-left:16px;
+    font-size:16px;
+    position: relative;
+    margin:20px 0 20px 60px;
+}
+.identityTabs  .tab-pane strong{
+    display: block;
+    font-size:20px;
+    color:var(---primary-color);
+}
+.identityTabs  .tab-pane ul.num li:before{
+    content:'';
+    color: var(---primary-dark-color);
+    font-size: 45px;
+    font-family: 'DM Serif Display', serif;
+    position: absolute;
+    left: -62px;
+    top: -13px;
+    display: block;
+    width: 50px;
+    text-align: right;
+}
+
+.identityTabs  .tab-pane ul.num li:nth-child(1):before{
+    content:'01';
+   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(2):before{
+    content:'02';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(3):before{
+    content:'03';   
+}
+
+.identityTabs  .tab-pane ul.num li:nth-child(4):before{
+    content:'04';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(5):before{
+    content:'05';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(6):before{
+    content:'06';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(7):before{
+    content:'07';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(8):before{
+    content:'08';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(9):before{
+    content:'09';   
+}
+.identityTabs  .tab-pane ul.num li:nth-child(10):before{
+    content:'10';   
+}
+
+
+
+
+.pentagons{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0 80px 0;
+    
+}
+.leftPentagon,.rightPentagon{
+    display: flex;
+    width:375px;
+    height:327px;
+    background: url("../img/light-blue-polygon.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.leftPentagon{
+    left: -116px;
+}
+.leftPentagon:before{
+    content:'';
+    display: block;
+    width:50px;
+    height:50px;
+    background: url("../img/engineer.png") no-repeat;
+    position: relative;
+}
+.rightPentagon:before{
+    content:'';
+    display: block;
+    width:50px;
+    height:50px;
+    background: url("../img/bulb.png") no-repeat;
+    position: relative;
+}
+.centerPentagon:before{
+    content:'';
+    display: block;
+    width:60px;
+    height:50px;
+    background: url("../img/team.png") no-repeat;
+    position: relative;
+}
+.rightPentagon{
+    right: -116px;
+}
+.leftPentagon ul,.rightPentagon ul,.centerPentagon ul{
+    width:65%;
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    text-align: center;
+    font-size:14px;
+    font-weight: 600;
+    color:#fff;
+}
+.leftPentagon ul li,.rightPentagon ul li,.centerPentagon ul li{
+    padding:20px 0;
+    position:relative
+}
+.leftPentagon ul li:after,.rightPentagon ul li:after,.centerPentagon ul li:after{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: url("../img/blue-dot.png") no-repeat 50% 0;
+    position: relative;
+    left: 48%;
+    top: 23px;
+}
+.leftPentagon ul li:after,.rightPentagon ul li:after{
+    background: url("../img/white-dot.png") no-repeat 50% 0;
+}
+.leftPentagon ul li:last-child:after,.rightPentagon ul li:last-child:after,.centerPentagon ul li:last-child:after{
+background: transparent;
+}
+.centerPentagon{
+    display: flex;
+    width:521px;
+    height:451px;
+    background: url("../img/dark-blue-polygon.png") no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-weight: 600; 
+
+}
+.devOpsConsult{
+    background: #f3f2f8 url("../img/devops.jpg") no-repeat  no-repeat 15% 250px;
+    padding-top:70px;
+}
+.devOpsConsult h2{
+    font-weight: 300;
+    font-size:50px;
+    text-align: center;
+}
+.devOpsConsult h2.bold{
+    font-weight: 600;
+    color:#f5981f;
+}
+.devOpsConsult h2.bold span{
+    color:#505895
+}
+.devOpsConsult .devcont{
+    padding-top:70px;
+    padding-bottom:140px;
+}
+.devOpsConsult .devcont strong{
+    font-weight: 700;
 }
