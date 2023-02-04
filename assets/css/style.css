@@ -82,6 +82,7 @@ body{
     color:#ffffff;
     text-transform: capitalize;
     display: block;
+    text-align: left;
 }
 .mainnav ul li:hover ul li a{
 color:white;
@@ -183,7 +184,7 @@ color:white;
     background: var(---primary-dark-color);
     color: white;
     font-size: 14px;
-    padding: 11px 15px;
+    padding: 5px 15px 11px 15px;
     display: inline-block;
     float: right;
     font-size: 16px;
@@ -569,7 +570,13 @@ height:100%;
 .pageContent .img{
 padding-bottom:40px;
 }
-
+.pageContent .highlight{
+    font-size:35px;
+    color:#2f589b;
+    line-height:40px;
+    text-align: center;
+    padding:50px 0;
+}
 .pageContent h2{color:#2f589b; font-size:16px; padding:15px 0; text-transform: uppercase; font-weight: 600;}
 .pageContent h3{color:#333333; font-size:16px; padding:15px 0; text-transform: capitalize; font-weight: 600;}
 
@@ -592,4 +599,55 @@ padding-bottom:40px;
     width:50%;
     text-align: center;
     margin:0 auto;
+}
+
+.expertServices{
+    background:#d2e4f0;
+    padding:80px 0;
+}
+.expertServices h2{ text-align: center;}
+.expertServices .normalForm {
+    padding-top:50px;
+}
+.normalForm .form-row{
+    display:flex;
+    padding:15px 20px;
+}
+
+.normalForm .form-control{
+    border-radius:0px;
+    font-size:14px;
+    padding:8px 10px 8px 34px;
+}
+.normalForm textarea.form-control{
+    padding:34px 10px 8px 34px;
+    min-height:400px;
+}
+.normalForm .form-control.user{
+    background: #fff url("../img/user.png") no-repeat 10px;
+    
+}
+.normalForm .form-control.mail{
+    background: #fff url("../img/email.png") no-repeat 10px;
+    
+}
+.normalForm .form-control.phone{
+    background: #fff url("../img/phone.png") no-repeat 10px;
+    
+}
+.normalForm .form-control.company{
+    background: #fff url("../img/company.png") no-repeat 10px;
+    
+}
+.normalForm .form-control.message{
+    background: #fff url("../img/message.png") no-repeat 10px 10px;
+    
+}
+.normalForm button.btn-primary{
+    background: var(---primary-dark-color);
+    border-radius: 0px;
+    font-size:14px;
+    color:#ffffff;
+    padding:6px 10px;
+    min-width: 150px;
 }
