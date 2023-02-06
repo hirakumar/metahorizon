@@ -272,7 +272,6 @@ box-shadow: 0 0 10px rgba(0,0,0,0.2);
     margin: 0 0 0 -150px;
     top: 0px;
     left: 50%;
-
 }
 h2.h2{ text-transform: capitalize; color:var(---primary-dark-color); font-weight:400; margin:0px; padding:30px 0; font-size:50px;  text-align: center; font-family: 'DM Serif Display', serif;}
 
@@ -438,6 +437,190 @@ height:100%;
 .wedo.core:before{
     background:transparent;
 }
+/* Engineer */
+.wedo.engineer {
+    background:#f5f7fc;
+}
+
+.wedo.engineer h2{
+    color:var(---primary-dark-color);
+    margin-bottom:100px;
+}
+
+.wedo.engineer:before{
+    background-color: transparent;
+}
+
+.wedo.engineer h2{
+    color:var(---primary-dark-color);
+}
+.wedo.engineer .skilled h3{
+    background: url("../img/idea-logo-blue.png") no-repeat;
+}
+.wedo.engineer .skilled:hover h3{
+    background: url("../img/idea-logo.png") no-repeat;
+}
+.wedo.engineer .cost h3{
+    background: url("../img/cost-blue.png") no-repeat;
+}
+.wedo.engineer .cost:hover h3{
+    background: url("../img/cost-white.png") no-repeat;
+}
+.wedo.engineer .risk h3{
+    background: url("../img/risk-blue.png") no-repeat;
+}
+.wedo.engineer .risk:hover h3{
+    background: url("../img/risk-white.png") no-repeat;
+}
+.wedo.engineer .easy h3{
+    background: url("../img/easy-blue.png") no-repeat;
+}
+.wedo.engineer .easy:hover h3{
+    background: url("../img/easy-white.png") no-repeat;
+}
+.wedo.engineer .desc{
+    color:#333
+}
+.wedo.engineer .services .item.whiteBg{
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}
+.wedo.engineer .services .item .itemContent{
+    background: #ffffff;
+    color:#333333;
+   
+}
+.wedo.engineer .whiteBg:hover .itemContent{
+    background: var(---primary-color);
+    
+}
+
+
+.wedo.engineer .tracking h3{
+    background: url("../img/tracking.png") no-repeat 0 8px;
+}
+
+.wedo.engineer .tracking .itemContent{
+    background: rgba(30,166,166,1);
+}
+.wedo.engineer .tracking:hover .itemContent{
+    background: rgba(30,166,166,0.8);
+}
+
+
+.wedo.engineer .training h3{
+    background: url("../img/trust-logo.png") no-repeat 0 12px;
+}
+
+.wedo.engineer .training .itemContent{
+    background: rgba(54,108,182,1);
+}
+.wedo.engineer .training:hover .itemContent{
+    background: rgba(54,108,182,0.8);
+}
+.wedo.engineer .whiteBg .itemContent{
+    background:var(---primary-color);
+}
+.wedo.engineer .whiteBg:hover .itemContent{
+color:#ffffff
+}
+
+
+.wedo.engineer .build {
+    color:#333;
+}
+.wedo.engineer .build h3{
+    background: url("../img/build.png") no-repeat;
+    color:#333;
+}
+.wedo.engineer .build .itemContent{
+    background: rgba(215,223,208,1);
+}
+.wedo.engineer .build:hover .itemContent{
+    background: rgba(215,223,208,0.8);
+}
+.wedo.engineer .build .itemContent li{
+    color:#333;
+}
+
+.wedo.engineer .services .item h3 {
+    margin: 20px 15px 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+   
+    text-align: left;
+    height: 80px;
+    padding-left: 78px;
+  }
+
+  .advantage {
+    padding-bottom:100px;
+    background: url("../img/advantagebg.jpg");
+    background-size: 100% auto;
+  }
+  .advantage h2 {
+    font-size:50px;
+    color:white;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    padding:100px 0;
+    font-weight: 300;
+  }
+  .advantage p{
+    color:#ffffff;
+    font-size: 25px;
+  }
+  .advantage p{
+    padding:50px 0;
+    position: relative;
+  }
+
+.advantage .checklist:before {
+    content:'';
+    background: url('../img/checklist.png');
+    width:43px;
+    height:47px;
+    display: block;
+    top: 60px;
+    left: -65px;
+    position: absolute;
+}
+.advantage .enhance:before {
+    content:'';
+    background: url('../img/enhance.png');
+    width:43px;
+    height:47px;
+    display: block;
+    top: 60px;
+    left: -65px;
+    position: absolute;
+}
+
+.advantage .rocket:before {
+    content: '';
+    background: url('../img/rocket.png');
+    width: 54px;
+    height: 47px;
+    display: block;
+    top: 60px;
+    left: -86px;
+    position: absolute;
+}
+.advantage .perform:before {
+    content:'';
+    background: url('../img/perform.png');
+    width:43px;
+    height:47px;
+    display: block;
+    top: 60px;
+    left: -65px;
+    position: absolute;
+}
+
+
+
+
+
 
 
 .weserve {background:#f5f7fb; padding:50px 0}
@@ -458,7 +641,40 @@ height:100%;
 .weserve  ul li.telecom {
     background: url("../img/telecom.png") no-repeat 50% 0;
 }
+.verticalCentered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.business-benefit {
+    display: block;
+    background: url("../img/meeting.jpg") no-repeat;
+    background-size:100% auto;
+}
+.business-benefit h2{
+    font-weight: 300;
+    font-size:50px;
+    text-align: center;
+    color:#ffffff;
+    font-family: 'DM Serif Display', serif;
+    padding:100px 0;
 
+}
+.business-benefit  ul {
+    margin:0px;
+    list-style: none;
+}
+.business-benefit  ul li{
+    font-size:25px;
+    font-weight: 300;
+    color:#ffffff;
+    padding-bottom:60px;
+    padding-left:55px;
+    min-height:40px;
+    margin:0px;
+    background: url("../img/tick.png") no-repeat 0 8px;
+}
+ 
 .siteFooter {
     background:var(---primary-dark-color);
     padding-top:30px;
@@ -533,6 +749,9 @@ height:100%;
     width:40px;
     height:40px;
     margin-right:10px;
+}
+.siteFooter .social a{
+    text-decoration: none;
 }
 .siteFooter .social{
     display: block;
@@ -725,6 +944,43 @@ background-image: url("../img/budget.png");
 .benefit ul li.support:before{
     background-image: url("../img/support.png");
 }
+.intelligence {
+    padding:80px 0;
+}
+.intelligence h3{
+    font-size: 16px;
+    font-weight: 600;
+    color:var(---primary-dark-color);
+    text-transform: uppercase;
+    margin:0px;
+    padding-bottom:40px;
+}
+.intelligence ul {
+    margin:0px;
+    padding:40px 0 0 0;
+    list-style: none;
+}
+.intelligence ul li{
+    margin:0px;
+    padding:0px 0 25px 50px;
+    list-style: none;
+    background: url("../img/gray-tick.png") no-repeat;
+    
+}
+.cloud {
+    background:#b3e0ff url("../img/server.jpg") 100% 100% no-repeat;
+}
+.cloud h2{
+    font-size:50px;
+    color:var(---primary-dark-color);
+    font-size:40px;
+    padding:100px 0;
+    text-align: c;
+}
+.cloud h2 span{
+    color:#db359d;
+}
+
 .identityTabs{
     position: relative;
 }
@@ -940,3 +1196,116 @@ background: transparent;
 .devOpsConsult .devcont strong{
     font-weight: 700;
 }
+
+.wedo.fullsuit:before{
+    background-color: transparent;
+}
+.wedo.fullsuit {
+    background: #fff url("../img/blue-box.png") 50% calc(100% - 50px) no-repeat;
+}
+.wedo.fullsuit h2{
+    color:var(---primary-dark-color);
+}
+.wedo.fullsuit .automation h3{
+    background: url("../img/white-bulb.png") no-repeat;
+}
+.wedo.fullsuit .desc{
+    color:#333
+}
+.wedo.fullsuit .automation .itemContent{
+    background: rgba(249,138,56,1);
+}
+.wedo.fullsuit .automation:hover .itemContent{
+    background: rgba(249,138,56,0.8);
+}
+
+
+.wedo.fullsuit .tracking h3{
+    background: url("../img/tracking.png") no-repeat 0 8px;
+}
+
+.wedo.fullsuit .tracking .itemContent{
+    background: rgba(30,166,166,1);
+}
+.wedo.fullsuit .tracking:hover .itemContent{
+    background: rgba(30,166,166,0.8);
+}
+
+
+.wedo.fullsuit .training h3{
+    background: url("../img/trust-logo.png") no-repeat 0 12px;
+}
+
+.wedo.fullsuit .training .itemContent{
+    background: rgba(54,108,182,1);
+}
+.wedo.fullsuit .training:hover .itemContent{
+    background: rgba(54,108,182,0.8);
+}
+
+
+
+.wedo.fullsuit .build {
+    color:#333;
+}
+.wedo.fullsuit .build h3{
+    background: url("../img/build.png") no-repeat;
+    color:#333;
+}
+.wedo.fullsuit .build .itemContent{
+    background: rgba(215,223,208,1);
+}
+.wedo.fullsuit .build:hover .itemContent{
+    background: rgba(215,223,208,0.8);
+}
+.wedo.fullsuit .build .itemContent li{
+    color:#333;
+}
+
+.wedo.fullsuit .services .item h3 {
+    margin: 20px 15px 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+   
+    text-align: left;
+    height: 80px;
+    padding-left: 78px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  .devops-methology{
+    background: #f3f2f8 url("../img/devopsbg1.jpg") 100% 100% no-repeat;
+    padding:100px 0;
+    text-align: center;
+  }
+  .devops-methology h2{
+    font-size:50px;
+    text-align: center;
+  }
+  .devops-methology .dev{
+    color:#1ea6a6;
+    font-weight: 700;
+  }
+  .devops-methology .ops{
+    color:#f58c3b;
+    font-weight: 700;
+  }
+  .devops-methology .cover{
+    margin:150px 0;
+  }
