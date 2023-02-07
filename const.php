@@ -1,3 +1,3 @@
 <?php
-define("SITEURL", "https://sandbox.metahorizon.com/metahorizon/");
+define("SITEURL", "http://localhost/metahorizon/");
 ?>

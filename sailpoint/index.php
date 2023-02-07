@@ -4,13 +4,14 @@
 
 <head>
     
-    <title>About Us</title>
+    <title>Sailpoint</title>
     <?php 
       include_once("../include/head.php");  
     ?>
 </head>
 
 <body>
+   
 <?php 
     include_once('../include/topbar.php');
  
@@ -154,32 +155,33 @@
                     <p class="text-center">Your very own SailPoint IdentityIQ admin that does it all for you. The power
                         combination between SailPoint IdentityIQ and our admin services provides you comfort,
                         consistency for administrative tasks.</p>
-                    <form action="#" class="normalForm">
-
+                        <form  action="https://api.web3forms.com/submit" class="normalForm" method="POST">
+                        <input type="hidden" name="access_key" value="37b29eb9-d7a7-443e-b2d3-5de1e6d4f044" />
+                        <input type="hidden" name="redirect" value="<?php echo SITEURL.'success/?page=sailpoint'; ?>">
                         <div class="form-row">
-                            <div class="col-sm-5 offset-sm-1">
-                                <input type="text" class="form-control user" placeholder="Your name">
+                            <div class="col-sm-5 ">
+                                <input type="text" name="name" class="form-control user" placeholder="Your name">
                             </div>
                             <div class="col-sm-5 offset-sm-1">
-                                <input type="text" class="form-control mail" placeholder="Email Address">
+                                <input type="email" name="email" class="form-control mail" placeholder="Email Address">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-5 offset-sm-1">
-                                <input type="text" class="form-control phone" placeholder="Phone No.">
+                            <div class="col-sm-5 ">
+                                <input type="text" name="phone" class="form-control phone" placeholder="Phone No.">
                             </div>
                             <div class="col-sm-5 offset-sm-1">
-                                <input type="text" class="form-control company" placeholder="Company Name">
+                                <input type="text" name="company" class="form-control company" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-11 offset-sm-1">
-                                <textarea class="form-control message"></textarea>
+                            <div class="col-sm-11 ">
+                                <textarea name="message" class="form-control message"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-12 text-center">
-                                <button class="btn btn-primary">Submit</button>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </form>

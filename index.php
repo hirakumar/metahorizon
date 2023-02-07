@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-       <title>Metahorizon1</title>
+       <title>Identity Security : Metahorizon Inc</title>
    <?php include_once("include/head.php") ?>
 </head>
 
