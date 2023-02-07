@@ -1092,7 +1092,10 @@ h2.sectionHeader {
     display: flex;
     padding: 15px 20px;
 }
-
+.contactBlock .normalForm .form-row {
+    display: flex;
+    padding: 15px 0px;
+}
 .normalForm .form-control {
     border-radius: 0px;
     font-size: 14px;
@@ -1871,6 +1874,7 @@ padding-bottom:15px;
                 flex:1;
                 justify-content: center;
                 padding-top:65px;
+                font-size:14px;
             }
             .features ul li:before{
                 content:''
@@ -1890,5 +1894,21 @@ padding-bottom:15px;
             .features ul li.post{
                 background:url('../img/maintenace.png') no-repeat 50% 0;
             }
-            
-       
+            .featuresRow {
+                border-top:solid 1px #dee2e6
+            }
+            .contactBlock {
+                padding-bottom:80px;
+            }
+            .contactBlock h2 {
+                font-size: 16px;
+                text-transform: uppercase;
+                text-align: left;
+                color: var(---primary-dark-color);
+                font-weight: 700;
+                padding: 80px 0 50px 0;
+                margin: 0px;
+            }
+            .contactBlock .address{
+                padding-bottom:35px;
+            }
