@@ -15,7 +15,7 @@
     include_once('../include/topbar.php');
  
  
-    showNav("about-us")
+    showNav("contact-us")
      ?>
     <div class="pageTop">
         <div class="container">

@@ -15,9 +15,7 @@ echo '<footer class="siteFooter">
                     <li>
                         <a href="'.SITEURL.'sailpoint/">Sailpoint</a>
                     </li>
-                    <li>
-                        <a href="'.SITEURL.'career/">Careers</a>
-                    </li>
+                   
                     <li>
                         <a href="'.SITEURL.'contact-us/">Contact Us</a>
                     </li>
@@ -54,7 +52,7 @@ echo '<footer class="siteFooter">
                 <div class="mail">
                     <div>
                         <span>(469) 345-7495</span>
-                        <a class="email">
+                        <a class="email" href="mailto:contact@metahorizon.com">
                             contact@metahorizon.com</a>
                     </div>
                 </div>
@@ -88,7 +86,7 @@ echo '<footer class="siteFooter">
                 </address>
             </div>
             <div class="social">
-                <a href="https://www.facebook.com/metahorizoninc" class="facebook">
+                <a href="https://www.facebook.com/metahorizoninc" class="facebook" aria-label="Facebook">
                     <svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
                         viewBox="0 0 512 512" width="512px" xml:space="preserve"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -96,7 +94,7 @@ echo '<footer class="siteFooter">
                             d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z" />
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/company/metahorizon-inc" class="linkedIn">
+                <a href="https://www.linkedin.com/company/metahorizon-inc" class="linkedIn" aria-label="LinkedIn">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <g>
                             <path d="M0 0h24v24H0z" fill="none" />
@@ -106,7 +104,7 @@ echo '<footer class="siteFooter">
                         </g>
                     </svg>
                 </a>
-                <a href="https://www.youtube.com/channel/UCFvSt0exZdVVn61Wfc2impw" class="youtube">
+                <a href="https://www.youtube.com/channel/UCFvSt0exZdVVn61Wfc2impw" class="youtube" aria-label="Youtube">
                     <svg enable-background="new 0 0 24 24" height="24px" id="Layer_1" version="1.1"
                         viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -124,10 +122,10 @@ echo '<footer class="siteFooter">
     <div class="row">
         <div class="col-sm-12">
             <div class="copyright-block">
-                <img src="'.SITEURL.'assets/img/white-metahorizon.png" class="whitelogo" alt="Metahorizon"
+                <img src="'.SITEURL.'assets/img/white-metahorizon.png" class="whitelogo" alt="Metahorizon" width="167" height="42"
                     title="Metahorizon" />
                 <div class="copyright">
-                    Copyright &copy; 2022. All rights reserved. <br />
+                    Copyright &copy; '. date("Y") .'. All rights reserved. <br />
                     <a href="#">Privacy Policy</a> | <a href="#">Term &amp; Conditon</a>
                 </div>
             </div>
@@ -138,16 +136,16 @@ echo '<footer class="siteFooter">
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-crossorigin="anonymous"></script>
+crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-crossorigin="anonymous"></script>
+crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
 integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-crossorigin="anonymous"></script>'
+crossorigin="anonymous" defer></script>'
 ?>
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<script type="text/javascript" defer>
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];

@@ -10,7 +10,11 @@ body {
 .primary-color {
     color: var(---primary-color) !important;
 }
-
+.vanish {
+    display: block;
+    position: absolute;
+    left:-999em;
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -21,6 +25,7 @@ body {
 .logo img {
 
     max-width: 100%;
+    height: auto;
 }
 
 .mainnav {
@@ -28,7 +33,38 @@ body {
     position: relative;
 
 }
-
+.mainnav input.menucheck{
+    display:none;
+}
+.mainnav .hamburger {
+    width:35px;
+    height:4px;
+    display: none;
+    border-radius:5px;
+    background:black;
+    position:relative;
+    top:18px;
+}
+.mainnav .hamburger:before {
+    width:35px;
+    height:4px;
+    border-radius:5px;
+    background:black;
+    position:absolute;
+    top:-8px;
+    left:0px;
+    content:'';
+}
+.mainnav .hamburger:after {
+    width:35px;
+    height:4px;
+    border-radius:5px;
+    background:black;
+    position:absolute;
+    top:8px;
+    left:0px;
+    content:'';
+}
 .mainnav ul {
     display: flex;
     list-style: none;
@@ -117,12 +153,20 @@ body {
     position: relative;
     height: 500px;
 }
-
+.slider p {
+    font-size:20px;
+    color:#ffffff;
+    padding:20px 0;
+    margin:0px;
+}
 .slider img {
     width: 100%;
     height: auto;
 }
-
+.slider .item {
+    display: block;
+    height: 100%;
+}
 .slider .layer {
 
     position: absolute;
@@ -134,13 +178,13 @@ body {
 
 }
 
-.slider .cont h2 span {
+.slider .cont h1 span {
     display: block;
 }
 
 .slider .sliderImg {
     width: 100%;
-    filter: grayscale(1);
+    filter:brightness(50%);
     height: 500px;
     top: 0px;
     object-fit: cover;
@@ -151,21 +195,21 @@ body {
 .slider .slidercont {
     position: relative;
     z-index: 10;
-
+    height:100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.slider h2 {
+.slider h1 {
     font-size: 35px;
     color: white;
     margin: 0px;
     line-height: 35px;
-    margin-top: 80px;
+  
 }
 
-.slider h2 span.h2 {
+.slider h1 span.h2 {
     font-weight: 700;
     font-size: 45px;
     line-height: 45px;
@@ -173,13 +217,13 @@ body {
     color: var(---primary-color);
 }
 
-.slider h2 span.h3 {
+.slider h1 span.h3 {
     font-size: 45px;
     font-weight: 700;
 }
 
 .slider .book {
-    top: 60px;
+    top:0px;
     position: relative;
     display: inline-block;
 }
@@ -260,6 +304,8 @@ body {
     z-index: 5;
     top: 150px;
     margin-bottom: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 .whowe h2 {
@@ -270,7 +316,8 @@ body {
 }
 
 .whowe .whocont {
-    padding: 100px 0 150px 0;
+    padding-top: 100px;
+    padding-bottom:150px;
 }
 
 .whowe .whocont {
@@ -1003,6 +1050,8 @@ h2.sectionHeader {
 
 .pageContent .img {
     padding-bottom: 40px;
+    max-width: 100%;
+    height:auto;
 }
 
 .pageContent .highlight {
@@ -1051,7 +1100,8 @@ h2.sectionHeader {
 }
 
 .pageContent .contCol {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .pageContent p {
@@ -1092,10 +1142,12 @@ h2.sectionHeader {
     display: flex;
     padding: 15px 20px;
 }
+
 .contactBlock .normalForm .form-row {
     display: flex;
     padding: 15px 0px;
 }
+
 .normalForm .form-control {
     border-radius: 0px;
     font-size: 14px;
@@ -1642,273 +1694,324 @@ h2.sectionHeader {
 }
 
 
-.sailpoint h3.h3{
-    font-size:30px;
+.sailpoint h3.h3 {
+    font-size: 30px;
     text-align: center;
-    display:block;
-    color:#2f589b;
-    padding:50px 0 100px 0; 
+    display: block;
+    color: #2f589b;
+    padding: 50px 0 100px 0;
 
 }
+
 .history {
-    width:350px;
-    display:block;
+    width: 350px;
+    display: block;
 }
-.historyList{
-    padding-bottom:100px;
+
+.historyList {
+    padding-bottom: 100px;
 }
+
 /* Odd */
 .historyList .history:nth-child(odd) {
-    border-left:solid 3px rgb(39,194,237);
-    margin-left:50%;
+    border-left: solid 3px rgb(39, 194, 237);
+    margin-left: 50%;
 }
-.historyList .history:nth-child(odd) .year{
-    background: rgb(39,194,237);
-    background: linear-gradient(90deg, rgba(39,194,237,1) 0%, rgba(255,255,255,1) 100%);
-    padding-left:40px;
-    padding-right:0px;
+
+.historyList .history:nth-child(odd) .year {
+    background: rgb(39, 194, 237);
+    background: linear-gradient(90deg, rgba(39, 194, 237, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding-left: 40px;
+    padding-right: 0px;
 }
-.historyList .history:nth-child(odd) h4{
-    padding-left:40px;
+
+.historyList .history:nth-child(odd) h4 {
+    padding-left: 40px;
 }
+
 /* Even */
-.historyList .history:nth-child(even){
-    border-right:solid 3px rgb(39,194,237);
+.historyList .history:nth-child(even) {
+    border-right: solid 3px rgb(39, 194, 237);
     margin-left: calc(50% - 350px);
 }
-.historyList .history:nth-child(even) .year{
-    background: rgb(39,194,237);
-    background: linear-gradient(90deg,  rgba(255,255,255,1) 0%, rgba(39,194,237,1) 100%);
-    text-align:right;
-    padding-right:40px;
-    padding-left:0px;
+
+.historyList .history:nth-child(even) .year {
+    background: rgb(39, 194, 237);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(39, 194, 237, 1) 100%);
+    text-align: right;
+    padding-right: 40px;
+    padding-left: 0px;
 }
-.historyList .history:nth-child(even) .year:before{
-    left:auto;
-    right:-7px;
+
+.historyList .history:nth-child(even) .year:before {
+    left: auto;
+    right: -7px;
 }
-.historyList .history:nth-child(even) .year:after{
-    left:auto;
-    right:-18px;
+
+.historyList .history:nth-child(even) .year:after {
+    left: auto;
+    right: -18px;
 }
-.historyList .history:nth-child(even) h4,.historyList .history:nth-child(even) p{
-    text-align:right;
-    padding-right:40px;                    
- }
- .historyList .history:last-child{
-    border:none;
- }
-.historyList .year{
-    margin:0px;
-  
+
+.historyList .history:nth-child(even) h4,
+.historyList .history:nth-child(even) p {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.historyList .history:last-child {
+    border: none;
+}
+
+.historyList .year {
+    margin: 0px;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size:18px;
-    color:white;
-   
-    font-weight:bold;                      
-    
-    position:relative;
+    font-size: 18px;
+    color: white;
+
+    font-weight: bold;
+
+    position: relative;
 
 }
-.historyList .year:before{
+
+.historyList .year:before {
     content: '';
     display: block;
     width: 12px;
     height: 12px;
     border-radius: 15px;
-    background: rgb(39,194,237);
+    background: rgb(39, 194, 237);
     position: absolute;
     top: 7px;
     left: -7px;
     z-index: 100;
-   
-}
-.historyList .year:after{
-        content: '';
-        display: block;
-        width: 35px;
-        height: 35px;
-        border-radius: 35px;
-        background: #2c1588;
-        position: absolute;
-        left: 0px;
-        left: -19px;
-        z-index: 11;
-        top: -4px;
-}
-.historyList h4{
-font-family: Nunito, Arial, Helvetica, sans-serif;
-font-weight:600;
-color:#2f589b;
-font-size:24px;
-padding-top:35px;
-padding-bottom:15px; 
 
 }
-.historyList p{
-   padding-left:40px;
-   padding-bottom:30px;
-   font-size: 16px;
-   font-family: Arial, Helvetica, sans-serif;
-   letter-spacing: -0.02em;
+
+.historyList .year:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: #2c1588;
+    position: absolute;
+    left: 0px;
+    left: -19px;
+    z-index: 11;
+    top: -4px;
 }
+
+.historyList h4 {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #2f589b;
+    font-size: 24px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+
+}
+
+.historyList p {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -0.02em;
+}
+
 .services {
-                    display:flex;
-                    justify-content: space-between;
-                    padding-bottom:50px;
-                }
-                .services .searviceBlock{
-                    display:flex;
-                    flex-direction: column;
-                    font-family: 'Raleway', sans-serif;
-                    background:#1f78b4;
-                    flex:0 1 auto;
-                    width:31%;
-                    margin:0 10px;
-                    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
 
-                    font-size:14px;
-                }
-                .services .searviceBlock header{padding-left:30px; padding-top:35px;}
-                .services .searviceBlock header h3{
-                    font-size:18px;
-                    font-weight:bold;
-                    padding:0px;
-                    margin:0px;
-                    text-align:left;
-                    color:#fff;
-                    font-family: 'Raleway', sans-serif;
-                    height:50px;
-                    line-height: 50px;
-                    padding-left:80px;
-                    
-                }
-               
-                .services .searviceBlock ul {                                    
-                    margin: 0px;
-                    padding: 40px 0 40px 0;
-                    list-style: none;
-                }
-                .services .searviceBlock ul li{
-                    margin: 0px 0 0 27px;
-                    padding: 0px 10px 20px 18px;
-                    position: relative;
-                    font-size: 14px;
-                    line-height: 20px;
-                }
-                .services .searviceBlock ul li:before{
-                    content:'';
-                    background:#1fc0ec;
-                    height:5px;
-                    width:5px;
-                    border-radius: 5px;
-                    position: absolute;
-                    top: 9px;
-                    left: 0px;
-                }
-                .services .searviceBlock.professional header h3{                                     
-                    background:url('../img/excellence-logo.png') no-repeat;
-                   
-                }
-                .services .searviceBlock.expert header h3{                                     
-                    background:url('../img/expert.png') no-repeat;
-                   
-                }
-                .services .searviceBlock.manage header h3{                                     
-                    background:url('../img/manage.png') no-repeat;
-                   
-                }
-                .globalMarket{
-                    padding-bottom:100px;
-                }
-                .globalMarket h2{
-                    font-size:40px;
-                    text-align: center;
-                    padding:50px 0;
-                }
-                .globalMarket .map{
-                    display:flex;
-                    justify-content: center;
-                }
-                .globalMarket .map ul{
-                    list-style:none;
-                    background: #1f78b4;
-                    background: linear-gradient(90deg,#1f78b4 0%, rgba(255,255,255,1) 100%);
-                    padding-left: 40px;
-                    width:300px;
-                    padding-right: 0px;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-                    border-left: solid 4px white;
+.services .searviceBlock {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background: #1f78b4;
+    flex: 0 1 auto;
+    width: 31%;
+    margin: 0 10px;
+    color: white;
 
-                }
-                .globalMarket .map ul li {
-                    position:relative;
-                    color:white;
-                    padding-left:25px;
-                }
-                .globalMarket .map ul li:before{
-                    content: '';
-                        background: #1fc0ec;
-                        height: 5px;
-                        width: 5px;
-                        border-radius: 5px;
-                        position: absolute;
-                        top: 9px;
-                        left: 0px;
-                }
-             
-            .features{
-                display:flex;
-                justify-content: center;
-            }
-            .features ul{
-                display:flex;
-                justify-content: center;
-                flex:1;
-                padding-top:40px;
-            }
-            .features ul li{
-                display:flex;
-                text-align: center;
-                flex:1;
-                justify-content: center;
-                padding-top:65px;
-                font-size:14px;
-            }
-            .features ul li:before{
-                content:''
-            }
-            .features ul li.costEffective{
-                background:url('../img/cost.png') no-repeat 50% 0;
-            }
-            .features ul li.weekend{
-                background:url('../img/week.png') no-repeat 50% 0;
-            }
-            .features ul li.support{
-                background:url('../img/support1.png') no-repeat 50% 0;
-            }
-            .features ul li.assistance{
-                background:url('../img/implement.png') no-repeat 50% 0;
-            }
-            .features ul li.post{
-                background:url('../img/maintenace.png') no-repeat 50% 0;
-            }
-            .featuresRow {
-                border-top:solid 1px #dee2e6
-            }
-            .contactBlock {
-                padding-bottom:80px;
-            }
-            .contactBlock h2 {
-                font-size: 16px;
-                text-transform: uppercase;
-                text-align: left;
-                color: var(---primary-dark-color);
-                font-weight: 700;
-                padding: 80px 0 50px 0;
-                margin: 0px;
-            }
-            .contactBlock .address{
-                padding-bottom:35px;
-            }
+    font-size: 14px;
+}
+
+.services .searviceBlock header {
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+.services .searviceBlock header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 80px;
+
+}
+
+.services .searviceBlock ul {
+    margin: 0px;
+    padding: 40px 0 40px 0;
+    list-style: none;
+}
+
+.services .searviceBlock ul li {
+    margin: 0px 0 0 27px;
+    padding: 0px 10px 20px 18px;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.services .searviceBlock ul li:before {
+    content: '';
+    background: #1fc0ec;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
+
+.services .searviceBlock.professional header h3 {
+    background: url('../img/excellence-logo.png') no-repeat;
+
+}
+
+.services .searviceBlock.expert header h3 {
+    background: url('../img/expert-logo.png') no-repeat;
+
+}
+
+.services .searviceBlock.manage header h3 {
+    background: url('../img/manage.png') no-repeat;
+
+}
+
+.globalMarket {
+    padding-bottom: 100px;
+}
+
+.globalMarket h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.globalMarket .map {
+    display: flex;
+    justify-content: center;
+}
+
+.globalMarket .map ul {
+    list-style: none;
+    background: #1f78b4;
+    background: linear-gradient(90deg, #1f78b4 0%, rgba(255, 255, 255, 1) 100%);
+    padding-left: 40px;
+    width: 300px;
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-left: solid 4px white;
+
+}
+
+.globalMarket .map ul li {
+    position: relative;
+    color: white;
+    padding-left: 25px;
+}
+
+.globalMarket .map ul li:before {
+    content: '';
+    background: #1fc0ec;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+}
+
+.features ul {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding-top: 40px;
+}
+
+.features ul li {
+    display: flex;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 14px;
+}
+
+.features ul li:before {
+    content: ''
+}
+
+.features ul li.costEffective {
+    background: url('../img/cost.png') no-repeat 50% 0;
+}
+
+.features ul li.weekend {
+    background: url('../img/week.png') no-repeat 50% 0;
+}
+
+.features ul li.support {
+    background: url('../img/support1.png') no-repeat 50% 0;
+}
+
+.features ul li.assistance {
+    background: url('../img/implement.png') no-repeat 50% 0;
+}
+
+.features ul li.post {
+    background: url('../img/maintenace.png') no-repeat 50% 0;
+}
+
+.featuresRow {
+    border-top: solid 1px #dee2e6
+}
+
+.contactBlock {
+    padding-bottom: 80px;
+}
+
+.contactBlock h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(---primary-dark-color);
+    font-weight: 700;
+    padding: 80px 0 50px 0;
+    margin: 0px;
+}
+
+.contactBlock .address {
+    padding-bottom: 35px;
+}
+
+.careers {
+    padding: 80px 0
+}

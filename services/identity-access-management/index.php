@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 <title>Identity & Access Management</title>
+<meta  name="description" content="Our team of seasoned Identity Access Management (IAM) experts can help you continuously optimize your IAM investment." />
     <?php 
       include_once("../../include/head.php");  
     ?>
@@ -37,11 +38,16 @@
             </div>
             <div class="row ">
                 <div class="col-md-6 col-sm-12 contCol">
-                    <img src="<?php echo SITEURL; ?>assets/img/secure.jpg" />
+                <picture>
+                        <source srcset="<?php echo SITEURL; ?>assets/img/secure.webp" type="image/webp">
+                        <source srcset="<?php echo SITEURL; ?>assets/img/secure.jpg" type="image/jpeg"> 
+                        <img class="img" src="<?php echo SITEURL; ?>assets/img/secure.jpg" alt="Identity Security and Access Management" class="img" title="Identity Security and Access Management" />
+                    </picture>
+                  
                 </div>
-                <div class="col-md-5 col-sm-12 contCol">
+                <div class="col-md-6 col-lg-5 col-sm-12 contCol">
 
-                    <p>Our team of seasoned IAM experts can help you continuously optimize your IAM investment,
+                    <p>Our team of seasoned Identity Access Management (IAM) experts can help you continuously optimize your IAM investment,
                         implement additional efficiencies, increase uptime and improve your users' experience.
                     </p>
                     <p>We offer dedicated engineering resources with the IAM expertise needed to refine your program and
@@ -63,9 +69,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2 class="sectionHeader">How do you benefit</h2>
+                    <h2 class="sectionHeader">How do you benefit <span class="vanish">from Identity Access Management</span></h2>
                 </div>
-                <div class="col-md-5 offset-md-6">
+                <div class="col-sm-8 offset-sm-4 col-md-5 col-lg-5 offset-lg-6 offset-md-7">
                     <ul>
                         <li class="budget">Easy budgeting with flat rates</li>
                         <li class="resource">Free up your internal resources</li>
@@ -173,7 +179,7 @@
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="control" role="tabpanel" aria-labelledby="control-tab">
-                            <p class="tabdesc">Our Access Management Services allow you to take full control and manage
+                            <p class="tabdesc">Our Identity Access Management Services allow you to take full control and manage
                                 user access in your IT landscape, without sacrificing security nor user experience, to
                                 enhance your security posture and operation efficiency.</p>
                             <ul class="num">

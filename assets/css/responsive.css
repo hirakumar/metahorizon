@@ -1,0 +1,240 @@
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+   
+  }
+   
+  /* For Tablet View */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+       .whowe .img img{
+         margin-bottom:80px;
+       }
+       .whowe .whocont{
+        padding-top:50px;
+        padding-bottom:50px;
+       }
+       .whowe .img:before {
+        background-position: -50px 0;
+       }
+       .whowe h2{
+        padding:18px 0;
+        font-size:40px;
+       }
+       .wedo{
+        padding:50px 0;
+       }
+       .wedo h2, h2.sectionHeader{
+        font-size:40px;
+       }
+       .wedo .services .item{
+        width:310px;
+       }
+       .siteFooter address{
+        width:100%;
+       }
+      
+       
+  }
+  /* Mobile to Ipad Portait */
+   @media screen and (min-width: 320px) and (max-width: 1024px) {
+    .mainnav input.menucheck{
+        display:block;
+        }
+       .mainnav .hamburger{
+        display: block;
+       }
+       .mainnav ul {
+       display:none;
+       position: absolute;
+       width:350px;
+       
+       flex-direction: column;
+       background:var(---primary-dark-color);
+       top:55px;
+       }
+       input.menucheck{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 9;
+        opacity: 0;
+       }
+       input.menucheck:checked ~ .nav {
+      
+        display:flex;
+       }
+       input.menucheck:checked ~ .hamburger{
+        background:transparent
+       }
+       input.menucheck:checked ~ .hamburger:before {
+        transform: rotate(45deg) translate(-2px, -1px);
+        top:2px;
+       }
+       input.menucheck:checked ~ .hamburger:after {
+        transform: rotate(-45deg) translate(0, -1px);
+        top:2px;
+       }
+       
+      
+       .mainnav ul li{
+        text-align:left;
+       }
+       .mainnav ul li a{
+        color:#ffffff;
+       }
+       .mainnav ul li.hasChild > a::after{
+        background:url("../img/down-white.png");
+        background-size: 25px;
+       }
+
+       .mainnav ul li > ul{
+        top: 47px;
+        left: 50px;
+        padding:0px;
+       }
+       .benefit{
+        background-position: 70% 0;
+       }
+       .benefit ul li{
+        line-height: 25px;
+        padding-top:10px;
+       }
+       .pageContent .contCol {
+        padding-top:20px;
+        padding-bottom: 0;
+       }
+       .pageContent .highlight br {
+        display:none;
+       }
+       
+   }
+  /* For Mobile Portrait View */
+  @media screen and (max-width: 480px) {
+    .mainnav input.menucheck{
+        position: absolute;
+        top: -47px;
+        opacity: 0;
+    }
+    .mainnav .hamburger{
+        position: absolute;
+        top: -28px;
+    }
+    .mainnav ul{
+        top:5px;
+    }
+    .tel{
+        right:-12px;
+        top:15px;
+    }
+    .slider h1,.slider .cont h1 span,.slider h1 span.h2,.slider h1 span.h3{
+        font-size:25px;
+    }
+    .slider p{
+        font-size:16px;
+    }
+    .slider .book a{
+        padding:10px 20px
+
+    }
+    .slider .book span{
+        right: 0px;
+top: 53px;
+    }
+    .whowe .whoimg {
+        padding-bottom:0px;
+    }
+    .whowe .img::before{
+        width: 100%;
+height: 312px;
+top: 0px;
+left: 23px;
+
+    }
+    
+    .whowe .img img{
+        top: 15px;
+margin-bottom: 50px;
+    }
+    .whowe .whocont {
+        padding-top:10px;
+        padding-bottom:50px;
+    }
+    .whowe h2{
+        font-size:40px;
+        padding:20px 0;
+    }
+    .wedo{
+        padding-top:0px;
+        padding-bottom:0px;
+
+    }
+    .weserve ul{
+        display:block;
+    }
+    .weserve ul li{
+        width:50%;
+        float:left;
+        height:175px;
+    }
+    .siteFooter h3{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .siteFooter address{
+        width:100%;
+    }
+    .siteFooter .social{
+        text-align: center;
+        clear: both;
+        margin-left: 0px;
+        float: none;
+    }
+    .copyright-block{
+        flex-direction: column;
+    }
+    .copyright{
+        margin-left:0px;
+        border-left:none;
+        padding-top:20px;
+    }
+    .benefit {
+        min-height: 570px;
+    }
+    .benefit h2{
+        padding:40px 0;
+        font-size:40px;
+    }
+    .benefit ul{
+        margin-top:35px;
+    }
+    .pageTop h1{
+        font-size:30px;
+    }
+    .benefit {
+        background-position: 98% 0;
+    }
+    .pageContent {
+        padding-top:20px;
+    }
+    .pageContent .highlight{
+        padding-top:20px;
+        padding-bottom:20px;
+        font-size:25px;
+    }
+    .expertServices h2{
+        font-size:40px;
+    }
+    .normalForm .form-row{
+        flex-direction: column;
+    }
+    .normalForm .form-row input{margin-bottom:10px;}
+    .normalForm .form-row{
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    .normalForm button.btn-primary{
+        min-width:100%;
+        margin-top:10px;
+    }
+  }
+   

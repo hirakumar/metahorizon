@@ -129,7 +129,7 @@
                     <h2>Global Market</h2>
                     <div class="map">
                         <div class="worldMap">
-                            <img src="https://metahorizon.com/wp-content/uploads/2022/04/MAP.png">
+                            <img src="../assets/img/map.png" alt="World Map" title="World Map" />
                         </div>
                         <div>
                             <ul>

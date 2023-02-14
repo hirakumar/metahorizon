@@ -1,6 +1,7 @@
 <?php
 
 function showActiveClass($page,$compare){
+    
     if($page == $compare){
         return 'active';
     }else {
@@ -11,10 +12,19 @@ function showNav ($page){
     echo '<div class="topBar">
     <div class="container">
         <div class="row">
-            <div class="col-md-2"><a href="#" class="logo"><img src="'.SITEURL.'assets/img/metahorizon.png" /></a></div>
-            <div class="col-md-7">
+            <div class="col-lg-2 col-md-3">
+                <a href="'.SITEURL.'" class="logo">
+                    <img width="196" height="44" alt="Metahorizon Inc" title="Metahorizon Inc" src="'.SITEURL.'assets/img/metahorizon.png" />
+                </a>
+            </div>
+            <div class="col-lg-7 col-md-5">
                 <div class="mainnav">
-                    <ul>
+                <label class="vanish" for="menu_control">Menu</label>
+                    <input type="checkbox" id="menu_control"  class="menucheck" />
+                    <div class="hamburger">
+
+                    </div>
+                    <ul class="nav">
                         <li class="'.showActiveClass($page,"home").'">
                             <a href="'.SITEURL.'">Home</a>
                         </li>
@@ -43,18 +53,18 @@ function showNav ($page){
                                 </li>
                             </ul>
                         </li>
-                        <li '.showActiveClass($page,"sailpoint").'>
+                        <li class="'.showActiveClass($page,"sailpoint").'">
                             <a href="'.SITEURL.'sailpoint/">Sailpoint</a>
                         </li>
                        
-                        <li '.showActiveClass($page,"contact-us").'>
+                        <li class="'.showActiveClass($page,"contact-us").'">
                             <a href="'.SITEURL.'contact-us/">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="tel"><img src="'.SITEURL.'assets/img/chat.png" /> <span>(469) 345 -7495</span></div>
+            <div class="col-lg-3 col-md-4">
+                <div class="tel"><img title="Call" alt="Call" width="21" height="21" src="'.SITEURL.'assets/img/chat.png" /> <span>(469) 345 -7495</span></div>
             </div>
         </div>
     </div>
