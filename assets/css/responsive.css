@@ -1,6 +1,40 @@
 /* For Desktop View */
-@media screen and (min-width: 1024px) {
-   
+/* Ipad Landscape */
+@media screen and (min-width: 1024px) and (max-width:1080px) {
+    .centerPentagon ul{
+        width:37%;
+    }
+    .centerPentagon{
+        width: 478px;
+        height: 420px;
+        background-size: 100%;
+    }
+    .leftPentagon, .rightPentagon{
+        width: 318px;
+        height: 280px;
+        background-size: 100%;
+    }
+    .devOpsConsult {
+        background-position: -15% 250px;
+        
+      }
+      .devops-methology .cover{
+        width: 450px;
+      }
+      .devops-methology {
+        background-position:125% 100% ;
+       
+      }
+      .business-benefit{
+        padding-bottom:50px;
+      }
+      .business-benefit h2{
+        padding:50px 0;
+      }
+      .business-benefit ul li{
+        padding-bottom:30px;
+        font-size:20px;
+      }
   }
    
   /* For Tablet View */
@@ -32,8 +66,58 @@
        .siteFooter address{
         width:100%;
        }
-      
+       .centerPentagon {       
+        width: 422px;
+        height: 377px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .leftPentagon, .rightPentagon {
        
+        width: 245px;
+        height: 215px;
+        background-repeat:no-repeat;
+        background-size: 100%;
+      }
+      .leftPentagon ul li, .rightPentagon ul li, .centerPentagon ul li {
+        padding: 15px 0;
+        font-size:11px;
+      
+      }
+      .pageTop h1 {
+        font-size: 35px;
+      
+      }
+      .devOpsConsult h2{
+        font-size:40px;
+      }
+      .devOpsConsult{
+        background-position:-125% 250px;
+      }
+      .devops-methology .cover{
+        width:400px;
+      }
+      .devops-methology {
+        background-position: 253% 100%;
+      
+      }
+      .business-benefit h2{
+        font-size:40px;
+      }
+      .business-benefit h2{
+        padding:30px 0;
+      }
+      .business-benefit ul li {
+        font-size: 18px;
+       
+        padding-bottom: 30px;
+        padding-left: 50px;
+      
+      }
+      .pageContent h2{
+        font-size:20px;
+      }
+      .cloud{background-image:none; padding-bottom:50px;}
   }
   /* Mobile to Ipad Portait */
    @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -106,6 +190,8 @@
        .pageContent .highlight br {
         display:none;
        }
+       .cloud{background-image:none; padding-bottom:50px;}
+     
        
    }
   /* For Mobile Portrait View */
@@ -236,5 +322,65 @@ margin-bottom: 50px;
         min-width:100%;
         margin-top:10px;
     }
+    .pentagons{
+        flex-direction: column;
+    }
+    .leftPentagon, .rightPentagon, .centerPentagon{
+        width:100%;
+        height:auto;
+        position: static;
+        padding:20px;
+        border-radius:20px;
+        margin:15px 0;
+    }
+    .leftPentagon, .rightPentagon {
+        background: var(---primary-color);
+    }
+    .centerPentagon{
+        background: var(---primary-dark-color);
+    }
+    .devOpsConsult{
+        background-size: 80%;
+        background-position: 50% 136px;
+    }
+    .devOpsConsult h2 {font-size:30px;}
+    .devOpsConsult{
+        padding-top: 40px;
+    }
+    .devOpsConsult .devcont{
+        padding-top: 320px;
+        padding-bottom:50px;
+    }
+    .wedo.fullsuit h2{
+        font-size:30px;
+    }
+    .wedo .desc{
+        width:auto;
+    }
+    .devops-methology {
+        padding-top:40px;
+    }
+    .devops-methology h2{
+        font-size:30px;
+    }
+    .devops-methology .cover{
+        width:80%;
+        height:auto;
+        margin-top:50px;
+    }
+    .devops-methology{
+        background-size: 80%;
+    }
+    .business-benefit h2{
+        padding:80px 0;
+    }
+    .business-benefit{
+        background-color:black;
+    }
+    .business-benefit ul li {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .cloud{background-image:none; padding-bottom:50px;}
   }
    

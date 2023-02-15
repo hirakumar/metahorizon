@@ -4,6 +4,7 @@
 
 <head>
 <title>DevOps, Cloud & Automation</title>
+<meta name="description" content="DevOps is a way to align people, processes, and technology through DevOps tools to enable unified application" />
     <?php 
       include_once("../../include/head.php");  
     ?>
@@ -121,8 +122,12 @@
 
                     <div class="services">
                         <div class="automation item">
-
-                            <img class="img" src="<?php echo SITEURL; ?>assets/img/automation.jpg" />
+                        <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/automation.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/automation.jpg" type="image/jpeg"> 
+                            <img class="img" src="<?php echo SITEURL; ?>assets/img/automation.jpg"  alt="Automation" title="Automation" />
+                        </picture>
+                         
                             <div class="itemContent">
                                 <h3>Infrastructure Automation</h3>
                                 <ul>
@@ -135,7 +140,13 @@
                             </div>
                         </div>
                         <div class="tracking item">
-                            <img class="img" src="<?php echo SITEURL; ?>assets/img/tracking.jpg" />
+                        <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/tracking.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/tracking.jpg" type="image/jpeg"> 
+                            <img class="img" src="<?php echo SITEURL; ?>assets/img/tracking.jpg"  alt="Tracking" title="Tracking" />
+                        </picture>
+
+                          
                             <div class="itemContent">
                                 <h3>Tracking and Monitoring</h3>
                                 <ul>
@@ -154,7 +165,12 @@
 
 
                         <div class="training item">
-                            <img class="img" src="<?php echo SITEURL; ?>assets/img/training.jpg" />
+                        <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/training.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/training.jpg" type="image/jpeg"> 
+                            <img class="img" src="<?php echo SITEURL; ?>assets/img/training.jpg"  alt="Training" title="Training" />
+                        </picture>
+                            
                             <div class="itemContent">
                                 <h3>Training and Migration</h3>
                                 <ul>
@@ -168,12 +184,15 @@
                             </div>
                         </div>
                         <div class="build item">
-                            <img class="img" src="<?php echo SITEURL; ?>assets/img/build.jpg" />
+                        <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/build.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/build.jpg" type="image/jpeg"> 
+                            <img class="img" src="<?php echo SITEURL; ?>assets/img/build.jpg"  alt="Build and Release" title="Build and Release" />
+                        </picture>
+                          
                             <div class="itemContent">
                                 <h3>Build and Release
                                     Automation</h3>
-
-
 
 
                                 <ul>
@@ -218,7 +237,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 offset-md-1">
+                <div class="col-lg-5 col-md-6 offset-lg-1">
                     <ul>
                         <li>Improved customer experience and satisfaction </li>
                         <li>Breaking down the silos </li>
@@ -227,7 +246,7 @@
                         <li> Greater Business Valuation </li>
                     </ul>
                 </div>
-                <div class="col-md-5 offset-md-1">
+                <div class="col-lg-5 col-md-6 offset-lg-1">
                     <ul>
                         <li>Better software stability and quality </li>
                         <li>Team empowerment </li>
@@ -248,7 +267,7 @@
                         <li class="bank"><span>Bank &amp; Financial Institutions</span></li>
                         <li class="insurance"><span>Insurance</span></li>
                         <li class="healthcare"><span>Health Care</span></li>
-                        <li class="retail"><span>Retail &amp; E-Commerce</span></li>
+                        <li class="retail"><span>Retai  l &amp; E-Commerce</span></li>
                         <li class="telecom"><span>Telecom</span></li>
                     </ul>
                 </div>

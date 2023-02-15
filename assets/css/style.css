@@ -1103,6 +1103,9 @@ h2.sectionHeader {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.pageContent  img.float-end{
+max-width:100%;
+}
 
 .pageContent p {
     padding: 0px 0 30px 0;
@@ -1295,7 +1298,9 @@ h2.sectionHeader {
     padding: 100px 0;
     text-align: c;
 }
-
+.cloud .img{
+    max-width:100%;
+}
 .cloud h2 span {
     color: #db359d;
 }
@@ -1435,7 +1440,7 @@ h2.sectionHeader {
     display: flex;
     width: 375px;
     height: 327px;
-    background: url("../img/light-blue-polygon.png");
+    background: url("../img/light-blue-polygon.png") no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1651,21 +1656,6 @@ h2.sectionHeader {
     height: 80px;
     padding-left: 78px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .devops-methology {

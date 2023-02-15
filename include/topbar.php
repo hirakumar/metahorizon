@@ -64,7 +64,7 @@ function showNav ($page){
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
-                <div class="tel"><img title="Call" alt="Call" width="21" height="21" src="'.SITEURL.'assets/img/chat.png" /> <span>(469) 345 -7495</span></div>
+                <div class="tel"><img title="Call" alt="Call" width="21" height="21" src="'.SITEURL.'assets/img/chat.png" /> <span>+1 (469) 496-9588</span></div>
             </div>
         </div>
     </div>

@@ -5,6 +5,7 @@
 <head>
     
 <title>Custom Software Development</title>
+<meta name="description" content="We have expertise in developing large scale enterprise applications ensuring speed, performance and security for your growing business. " />
     <?php 
       include_once("../../include/head.php");  
     ?>
@@ -38,10 +39,15 @@
                 <p class="highlight">Metahorizon's Custom Java Development Services</p>
             </div>
             <div class="row">
-                <div class="col-md-5 col-sm-12 contCol offset-md-1">
-                    <img src="<?php echo SITEURL; ?>assets/img/app-dev.jpg" />
+                <div class="col-lg-5 col-md-6 col-sm-12 contCol offset-lg-1">
+                <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/app-dev.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/app-dev.jpg" type="image/jpeg"> 
+                            <img class="img" src="<?php echo SITEURL; ?>assets/img/app-dev.jpg"  alt="Java Development Services" title="Java Development Services" />
+                        </picture>
+                   
                 </div>
-                <div class="col-md-4 col-sm-12 contCol verticalCentered offset-md-1">
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol verticalCentered  offset-lg-1">
                     <h2 class="pb-5">Enterprise Web App Development​</h2>
                     <p>
                         We have expertise in developing large scale enterprise applications ensuring speed, performance
@@ -52,7 +58,7 @@
                 </div>
 
 
-                <div class="col-md-4 col-sm-12 contCol offset-md-1 verticalCentered">
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol offset-lg-1 verticalCentered">
                     <h2 class="pb-5">Java Web Development​</h2>
                     <p>
                         We engineer fast, secure, and reliable websites for a multitude of industries, including
@@ -62,14 +68,24 @@
                     </p>
 
                 </div>
-                <div class="col-md-5 col-sm-12 contCol align-right  offset-md-1">
-                    <img class="float-end" src="<?php echo SITEURL; ?>assets/img/html.jpg" />
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol verticalCentered  offset-lg-1">
+                <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/html.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/html.jpg" type="image/jpeg"> 
+                            <img class="float-end" src="<?php echo SITEURL; ?>assets/img/html.jpg"  alt="Java  Web Development" title="Java Web Development" />
+                        </picture>
+                    
                 </div>
 
-                <div class="col-md-5 col-sm-12 contCol ">
-                    <img src="<?php echo SITEURL; ?>assets/img/java.png" />
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol offset-lg-1 verticalCentered">
+                <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/java.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/java.jpg" type="image/jpeg"> 
+                            <img class="float-end" src="<?php echo SITEURL; ?>assets/img/java.jpg"  alt="Java  Software Development" title="Java Software Development" />
+                        </picture>
+                   
                 </div>
-                <div class="col-md-4 col-sm-12 contCol verticalCentered offset-md-1">
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol verticalCentered  offset-lg-1">
                     <h2 class="pb-5">Java Software Development​​</h2>
                     <p>
                         Metahorizon provides best-in-class Java development services using advanced Java frameworks and
@@ -79,7 +95,7 @@
                     </p>
                 </div>
 
-                <div class="col-md-4 col-sm-12 contCol offset-md-1 verticalCentered">
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol offset-lg-1 verticalCentered">
                     <h2 class="pb-5">Application Support and Modernization​​</h2>
                     <p>
                         We support and maintain your Java applications, Java frameworks and extensions, libraries,
@@ -90,8 +106,8 @@
                     </p>
 
                 </div>
-                <div class="col-md-5 col-sm-12 contCol align-right  offset-md-1">
-                    <img class="float-end" src="<?php echo SITEURL; ?>assets/img/app-support.jpg" />
+                <div class="col-md-6 col-lg-4 col-sm-12 contCol verticalCentered  offset-lg-1">
+                    <img class="float-end" src="<?php echo SITEURL; ?>assets/img/app-support.jpg" alt="Application Support and Modernization​​" title="Application Support and Modernization​​" />
                 </div>
 
 
@@ -110,7 +126,12 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <img src="<?php echo SITEURL; ?>assets/img/cloud-def.png" />
+                    
+                    <picture>
+                            <source srcset="<?php echo SITEURL; ?>assets/img/cloud-def.webp" type="image/webp">
+                            <source srcset="<?php echo SITEURL; ?>assets/img/cloud-def.jpg" type="image/jpeg"> 
+                            <img class="img" src="<?php echo SITEURL; ?>assets/img/cloud-def.jpg"  alt="Java  Software Development" title="Java Software Development" />
+                        </picture>
                 </div>
             </div>
         </div>
